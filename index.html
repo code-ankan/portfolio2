@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+             <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text"> Ankan Naskar </div>
+             </div>
+             <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                  <li><a href="#Home"> About Me </a></li>
+                  <li><a href="#Portfolio"> My City </a></li>
+                  <li><a href="#Resume"> My Gallery </a></li>
+                  <li><a href="#Blog"> My Favourite Books </a></li>
+                  <li><a href="#Contact"> My Favourite Sport </a></li>
+                  <li><a href="#Contact"> My Projects </a></li>
+                </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="main_photo.jpg" alt="profile picture">
+                </div>
+                <div class="hero-text">
+                    <h5> Hello! I am <span class="input"> Frontend Developer </span></h5>
+                    <h1> Ankan Naskar </h1>
+                    <p> I am a motivated and dedicated student with a strong academic record
+                        and a passion for learning. Currently pursuing a degree in MBBS,
+                         I have developed a solid foundation of knowledge and skills that I am eager to apply in a professional setting.
+                          In addition to my academic pursuits, I am also involved in various extracurricular activities,
+                           including web developing, language learning, sports etc where I have honed my leadership, teamwork, and communication skills.
+                            With a strong work ethic and a positive attitude, I am committed to achieving my goals and making
+                             a meaningful contribution to any organization that I am a part of.
+                </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active"> Download CV </a>
+                        <a href="#" class="btn"> Contact </a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+	<script>
+	var togglebtn=document.querySelector(".togglebtn");
+	var nav=document.querySelector(".navlinks");
+	var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+
+    var typed=new Typed(".input",{
+        strings:["Frontend Developer", "Website Manager", "Web Developer", "MBBS Student", "Video Editor", "Photo Editor", "Writer", "Voice-Over Artist", "Guitarist", "Film Manager", "Web Series Manager"],
+        typedSpeed: 40,
+        backSpeed: 55,
+        loop: true
+    })
+	</script>
+</body>
+</html>
